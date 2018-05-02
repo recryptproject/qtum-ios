@@ -3,7 +3,7 @@
 //  iMessageExtension
 //
 //  Created by Vladimir Lebedevich on 23.02.17.
-//  Copyright © 2017 QTUM. All rights reserved.
+//  Copyright © 2017 RECRYPT. All rights reserved.
 //
 
 #import "MessagesViewController.h"
@@ -94,7 +94,7 @@ static NSString *finalizedDisagreeText = @"Sorry, but not now";
 		message = [[MSMessage alloc] initWithSession:session];
 	}
 	MSMessageTemplateLayout *layout = [MSMessageTemplateLayout new];
-	layout.image = [self imageForMessageWithText:[NSString stringWithFormat:@"transfer me %@ QTUM", self.amountTextField.text.length > 0 ? self.amountTextField.text : @"some"] finalized:NO isResultSuccess:NO];
+	layout.image = [self imageForMessageWithText:[NSString stringWithFormat:@"transfer me %@ RECRYPT", self.amountTextField.text.length > 0 ? self.amountTextField.text : @"some"] finalized:NO isResultSuccess:NO];
 	message.layout = layout;
 	message.shouldExpire = YES;
 	message.URL = [self createUrlForMessageWithFinalized:NO andSucces:NO];
@@ -157,11 +157,11 @@ static NSString *finalizedDisagreeText = @"Sorry, but not now";
 - (IBAction)actiomSendMoney:(id) sender {
 	self.isPaymentInProcess = YES;
 	self.storedPaymendMessage = self.activeConversation.selectedMessage;
-	[self actionSendFinalizedMessage:nil withText:[NSString stringWithFormat:@"transfer me %@ QTUM", [self getAmountFromMessage:self.storedPaymendMessage].length > 0 ? [self getAmountFromMessage:self.storedPaymendMessage] : @"some"] isAgree:YES];
+	[self actionSendFinalizedMessage:nil withText:[NSString stringWithFormat:@"transfer me %@ RECRYPT", [self getAmountFromMessage:self.storedPaymendMessage].length > 0 ? [self getAmountFromMessage:self.storedPaymendMessage] : @"some"] isAgree:YES];
 }
 
 - (IBAction)actionCancelSendMoney:(id) sender {
-	[self actionSendFinalizedMessage:nil withText:[NSString stringWithFormat:@"transfer me %@ QTUM", [self getAmountFromMessage:self.activeConversation.selectedMessage].length > 0 ? [self getAmountFromMessage:self.activeConversation.selectedMessage] : @"some"] isAgree:NO];
+	[self actionSendFinalizedMessage:nil withText:[NSString stringWithFormat:@"transfer me %@ RECRYPT", [self getAmountFromMessage:self.activeConversation.selectedMessage].length > 0 ? [self getAmountFromMessage:self.activeConversation.selectedMessage] : @"some"] isAgree:NO];
 }
 
 - (void)handleSendinMessage:(MSMessage *) message {

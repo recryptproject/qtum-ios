@@ -3,7 +3,7 @@
 # Uncomment this line if you're using Swift
 # use_frameworks!
 
-target 'qtum wallet' do
+target 'recrypt wallet' do
     
 	pod 'CoreBitcoin', :podspec => 'https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec'
 	pod 'AFNetworking', '~> 2.0'
@@ -18,14 +18,14 @@ target 'qtum wallet' do
     pod 'SAMKeychain'
     pod 'Masonry'
 
-    target 'qtum walletTests' do
+    target 'recrypt walletTests' do
         inherit! :search_paths
         pod 'CoreBitcoin', :podspec => 'https://raw.github.com/oleganza/CoreBitcoin/master/CoreBitcoin.podspec'
     end
     
 end
 
-target 'QTUM Watch Extension' do
+target 'RECRYPT Watch Extension' do
     pod 'NKWatchActivityIndicator'
 end
 

@@ -1,9 +1,9 @@
 //
 //  iMessageDataOperation.h
-//  qtum wallet
+//  recrypt wallet
 //
 //  Created by Vladimir Lebedevich on 14.09.17.
-//  Copyright © 2017 QTUM. All rights reserved.
+//  Copyright © 2017 RECRYPT. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

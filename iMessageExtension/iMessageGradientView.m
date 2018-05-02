@@ -1,9 +1,9 @@
 //
 //  GradientView.m
-//  qtum wallet
+//  recrypt wallet
 //
 //  Created by Sharaev Vladimir on 17.11.16.
-//  Copyright © 2016 QTUM. All rights reserved.
+//  Copyright © 2016 RECRYPT. All rights reserved.
 //
 
 #import "iMessageGradientView.h"

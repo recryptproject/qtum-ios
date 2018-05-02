@@ -41,7 +41,7 @@ platform :ios do
     
     libraries
 
-    config = generate_fastlane_xcconfig(identifier:"org.qtum.qtum-wallet")
+    config = generate_fastlane_xcconfig(identifier:"org.recrypt.recrypt-wallet")
 
     match(
       app_identifier: [
@@ -73,7 +73,7 @@ platform :ios do
     
     libraries
 
-    config = generate_fastlane_xcconfig(identifier:"org.qtum.qtum-wallet", app_name:"QTUM-QA", testnet:true)
+    config = generate_fastlane_xcconfig(identifier:"org.recrypt.recrypt-wallet", app_name:"RECRYPT-QA", testnet:true)
 
     match(
       app_identifier: [
@@ -138,7 +138,7 @@ platform :ios do
     #TESTNET|MAINNET
     if options[:testnet] != nil || options[:testnet]
       configuration.attributes['APP_IS_MAINNET_SETTINGS'] = "NO"
-      configuration.attributes['APP_SERVER_HOST'] = "testnet-walletapi.qtum.org"
+      configuration.attributes['APP_SERVER_HOST'] = "testnet-walletapi.recrypt.org"
     end
 
     temp_configuration_path = "./../config.fastlane.xcconfig"
@@ -157,7 +157,7 @@ platform :ios do
     version_build = options[:config].attributes['APP_BUNDLE_VERSION_BUILD']
 
     slack(
-      message: "qtum.ipa-#{version_name} (#{version_build}): #{options[:message]}"
+      message: "recrypt.ipa-#{version_name} (#{version_build}): #{options[:message]}"
     )
 
   end

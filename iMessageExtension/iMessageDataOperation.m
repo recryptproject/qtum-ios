@@ -1,9 +1,9 @@
 //
 //  iMessageDataOperation.m
-//  qtum wallet
+//  recrypt wallet
 //
 //  Created by Vladimir Lebedevich on 14.09.17.
-//  Copyright © 2017 QTUM. All rights reserved.
+//  Copyright © 2017 RECRYPT. All rights reserved.
 //
 
 #import "iMessageDataOperation.h"
@@ -36,7 +36,7 @@
 
 + (NSString *)groupPath {
 
-	NSString *appGroupDirectoryPath = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.org.qtum.qtum-wallet"].path;
+	NSString *appGroupDirectoryPath = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.org.recrypt.recrypt-wallet"].path;
 	return appGroupDirectoryPath;
 }
 

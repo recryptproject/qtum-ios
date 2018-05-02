@@ -1,6 +1,6 @@
 ##  About
-Combining a modified Bitcoin Core infrastructure with an intercompatible version of the Ethereum Virtual Machine (EVM), Qtum merges the reliability of Bitcoin’s unfailing blockchain with the endless possibilities provided by smart contracts.
-Designed with stability, modularity and interoperability in mind, Qtum is the foremost toolkit for building trusted decentralized applications, suited for real-world, business oriented use cases. Its hybrid nature, in combination with a first-of-its-kind PoS consensus protocol, allow Qtum applications to be compatible with major blockchain ecosystems, while providing native support for mobile devices and IoT appliances.
+Combining a modified Bitcoin Core infrastructure with an intercompatible version of the Ethereum Virtual Machine (EVM), Recrypt merges the reliability of Bitcoin’s unfailing blockchain with the endless possibilities provided by smart contracts.
+Designed with stability, modularity and interoperability in mind, Recrypt is the foremost toolkit for building trusted decentralized applications, suited for real-world, business oriented use cases. Its hybrid nature, in combination with a first-of-its-kind PoS consensus protocol, allow Recrypt applications to be compatible with major blockchain ecosystems, while providing native support for mobile devices and IoT appliances.
 
 ## Getting Started
 
@@ -57,11 +57,11 @@ Open the project and in the config.xcconfig file change APP_IS_MAINNET_SETTINGS 
 ```
 //MAINNET
 APP_IS_MAINNET_SETTINGS = YES
-APP_SERVER_HOST = walletapi.qtum.org
+APP_SERVER_HOST = walletapi.recrypt.org
 
 //TESTNET
 APP_IS_MAINNET_SETTINGS = NO
-APP_SERVER_HOST = testnet-walletapi.qtum.org
+APP_SERVER_HOST = testnet-walletapi.recrypt.org
 ```
 
 #### Change network parameters
